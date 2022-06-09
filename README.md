@@ -31,36 +31,55 @@
 > - 🔁 项目同步维护：[Github](https://github.com/dunwu/db-tutorial/) | [Gitee](https://gitee.com/turnon/db-tutorial/)
 > - 📖 电子书阅读：[Github Pages](https://dunwu.github.io/db-tutorial/) | [Gitee Pages](https://turnon.gitee.io/db-tutorial/)
 
+## 分布式
+
+### 分布式综合
+
+- [分布式面试总结](https://dunwu.github.io/waterdrop/pages/f9209d/)
+
+### 分布式理论
+
+- [分布式理论](https://dunwu.github.io/waterdrop/pages/286bb3/) - 关键词：`拜占庭将军`、`CAP`、`BASE`、`错误的分布式假设`
+- [共识性算法 Paxos](https://dunwu.github.io/waterdrop/pages/0276bb/) - 关键词：`共识性算法`
+- [共识性算法 Raft](https://dunwu.github.io/waterdrop/pages/4907dc/) - 关键词：`共识性算法`
+- [分布式算法 Gossip](https://dunwu.github.io/waterdrop/pages/71539a/) - 关键词：`数据传播`
+
+### 分布式关键技术
+
+- 集群
+- 复制
+- 分区
+- 选主
+
+#### 流量调度
+
+- [流量控制](https://dunwu.github.io/waterdrop/pages/60bb6d/) - 关键词：`限流`、`熔断`、`降级`、`计数器法`、`时间窗口法`、`令牌桶法`、`漏桶法`
+- [负载均衡](https://dunwu.github.io/waterdrop/pages/98a1c1/) - 关键词：`轮询`、`随机`、`最少连接`、`源地址哈希`、`一致性哈希`、`虚拟 hash 槽`
+- [服务路由](https://dunwu.github.io/waterdrop/pages/3915e8/) - 关键词：`路由`、`条件路由`、`脚本路由`、`标签路由`
+- 服务网关
+- [分布式会话](https://dunwu.github.io/waterdrop/pages/95e45f/) - 关键词：`粘性 Session`、`Session 复制共享`、`基于缓存的 session 共享`
+
+#### 数据调度
+
+- [数据缓存](https://dunwu.github.io/waterdrop/pages/fd0aaa/) - 关键词：`进程内缓存`、`分布式缓存`、`缓存雪崩`、`缓存穿透`、`缓存击穿`、`缓存更新`、`缓存预热`、`缓存降级`
+- [读写分离](https://dunwu.github.io/waterdrop/pages/3faf18/)
+- [分库分表](https://dunwu.github.io/waterdrop/pages/e1046e/) - 关键词：`分片`、`路由`、`迁移`、`扩容`、`双写`、`聚合`
+- [分布式 ID](https://dunwu.github.io/waterdrop/pages/3ae455/) - 关键词：`UUID`、`自增序列`、`雪花算法`、`Leaf`
+- [分布式事务](https://dunwu.github.io/waterdrop/pages/e1881c/) - 关键词：`2PC`、`3PC`、`TCC`、`本地消息表`、`MQ 消息`、`SAGA`
+- [分布式锁](https://dunwu.github.io/waterdrop/pages/40ac64/) - 关键词：`数据库`、`Redis`、`ZooKeeper`、`互斥`、`可重入`、`死锁`、`容错`、`自旋尝试`
+
+#### 资源调度
+
+- 弹性伸缩
+
+#### 服务治理
+
+- [服务注册和发现](https://dunwu.github.io/waterdrop/pages/1a90aa/)
+- [服务容错](https://dunwu.github.io/waterdrop/pages/e32c7e/)
+- 服务编排
+- 服务版本管理
+
 ## 数据库综合
-
-### 分布式存储原理
-
-#### 分布式理论
-
-- [分布式理论](https://dunwu.github.io/design/pages/367308/)
-- [深入剖析共识性算法 Paxos](https://dunwu.github.io/design/pages/874539/)
-- [深入剖析共识性算法 Raft](https://dunwu.github.io/design/pages/e40812/)
-- [分布式算法 Gossip](https://dunwu.github.io/design/pages/d15993/)
-
-#### 分布式关键技术
-
-##### 流量调度
-
-- [流量控制](https://dunwu.github.io/design/pages/282676/)
-- [深入浅出负载均衡](https://dunwu.github.io/design/pages/b7ca44/)
-- [服务路由](https://dunwu.github.io/design/pages/d04ece/)
-- [分布式会话基本原理](https://dunwu.github.io/design/pages/3e66c2/)
-
-##### 数据调度
-
-- [缓存基本原理](https://dunwu.github.io/design/pages/471208/)
-- [读写分离基本原理](https://dunwu.github.io/design/pages/7da6ca/)
-- [分库分表基本原理](https://dunwu.github.io/design/pages/103382/)
-- [分布式 ID 基本原理](https://dunwu.github.io/design/pages/0b2e59/)
-- [分布式事务基本原理](https://dunwu.github.io/design/pages/910bad/)
-- [分布式锁基本原理](https://dunwu.github.io/design/pages/69360c/)
-
-### 其他
 
 - [Nosql 技术选型](docs/01.数据库综合/01.Nosql技术选型.md)
 - [数据结构与数据库索引](docs/01.数据库综合/02.数据结构与数据库索引.md)

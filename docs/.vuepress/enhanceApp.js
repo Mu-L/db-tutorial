@@ -6,7 +6,7 @@ export default ({
   options, // 附加到根实例的一些选项
   router, // 当前应用的路由实例
   siteData, // 站点元数据
-  isServer, // 当前应用配置是处于 服务端渲染 还是 客户端
+  isServer // 当前应用配置是处于 服务端渲染 还是 客户端
 }) => {
   // 用于监控在路由变化时检查广告拦截器 (to主题使用者：你可以去掉本文件的所有代码)
   if (!isServer) {
@@ -101,12 +101,12 @@ function integrateGitalk(router) {
     const gitalk = new Gitalk({
       clientID: '7dd8c87a20cff437d2ed',
       clientSecret: '4e28d81a9a0280796b2b45ce2944424c6f2c1531', // come from github development
-      repo: 'blog',
+      repo: 'db-tutorial',
       owner: 'dunwu',
       admin: ['dunwu'],
       id: 'comment',
-      distractionFreeMode: false,
-      language: 'zh-CN',
+      distractionFreeMode: true,
+      language: 'zh-CN'
     })
     gitalk.render('gitalk-container')
   }
